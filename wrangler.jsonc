@@ -1,0 +1,8 @@
+{
+  // Configuración de Cloudflare para luminova.mx
+  "name": "wild-river-6efb",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public"
+  }
+}

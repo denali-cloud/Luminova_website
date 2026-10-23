@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1A68DB">
+<title>Aviso de privacidad · Luminova</title>
+<meta name="description" content="Aviso de privacidad integral de Luminova · Psicología: qué datos recabamos, para qué los usamos y cómo ejercer tus derechos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4F7FB; --card: #FFFFFF; --ink: #182B49; --ink-soft: #3E4F69; --muted: #6B7A90;
+    --line: #DCE3EE; --primary: #1A68DB; --primary-soft: #E7F0FD; --ph: #FFF4CC; --ph-ink: #6B4E00;
+    --shadow: 0 1px 2px rgba(24, 43, 73, .06), 0 6px 24px rgba(24, 43, 73, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F172A; --card: #16213A; --ink: #E8EEF8; --ink-soft: #C3CEDF; --muted: #8F9DB5;
+      --line: #263452; --primary: #6EA4F5; --primary-soft: #1B2D50; --ph: #4A3B0B; --ph-ink: #FFE7A0; --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F172A; --card: #16213A; --ink: #E8EEF8; --ink-soft: #C3CEDF; --muted: #8F9DB5;
+    --line: #263452; --primary: #6EA4F5; --primary-soft: #1B2D50; --ph: #4A3B0B; --ph-ink: #FFE7A0; --shadow: none;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: 76px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.6; }
+  header.top { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  .top-inner { max-width: 820px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 12px; }
+  .logo-chip { background: #fff; border-radius: 10px; padding: 4px 8px; display: flex; }
+  .logo-chip img { height: 30px; width: auto; display: block; }
+  .print { margin-left: auto; font: inherit; font-weight: 700; font-size: 15px; color: var(--primary); background: none; border: 1.5px solid var(--line); border-radius: 10px; padding: 8px 14px; cursor: pointer; }
+  main { max-width: 820px; margin: 0 auto; padding: 0 16px 64px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 28px 20px; margin-top: 20px; }
+  @media (min-width: 640px) { .card { padding: 40px 44px; } }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 20px; }
+  h2 { font-size: 21px; line-height: 1.3; margin: 34px 0 10px; padding-top: 22px; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p { margin: 0 0 14px; color: var(--ink-soft); }
+  li { color: var(--ink-soft); margin-bottom: 6px; }
+  strong { color: var(--ink); }
+  a { color: var(--primary); font-weight: 700; }
+  .lead { font-size: 18px; color: var(--ink-soft); }
+  .toc { background: var(--primary-soft); border-radius: 12px; padding: 16px 20px; margin: 20px 0 8px; }
+  .toc p { margin: 0 0 6px; font-weight: 800; color: var(--ink); }
+  .toc ol { margin: 0; padding-left: 22px; }
+  .toc li { margin: 2px 0; }
+  .table-wrap { overflow-x: auto; margin: 10px 0 16px; border: 1px solid var(--line); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-soft); }
+  th { color: var(--ink); background: var(--primary-soft); font-weight: 800; }
+  tr:last-child td { border-bottom: 0; }
+  td.box { text-align: center; width: 56px; font-size: 18px; }
+  .ph { background: var(--ph); color: var(--ph-ink); border-radius: 4px; padding: 0 4px; font-weight: 700; }
+  .sign { display: grid; gap: 22px; margin: 22px 0; }
+  .sign div { border-bottom: 1.5px solid var(--ink-soft); padding-bottom: 4px; color: var(--muted); font-size: 14px; }
+  @media (min-width: 640px) { .sign { grid-template-columns: 2fr 2fr 1fr; } }
+  .footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 28px; }
+  @media print {
+    header.top { position: static; background: none; border: 0; }
+    .print, .toc { display: none; }
+    body { background: #fff; font-size: 11.5pt; }
+    .card { border: 0; box-shadow: none; padding: 0; margin: 0; }
+    h2 { break-after: avoid; }
+    .ph { background: none; color: inherit; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="logo-chip" href="/" aria-label="Luminova, ir al inicio"><img src="data:image/jpeg;base64,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" alt="Luminova"></a>
+    <button type="button" class="print" onclick="window.print()">Imprimir o guardar PDF</button>
+  </div>
+</header>
+
+<main>
+<article class="card">
+  <h1>Aviso de privacidad integral</h1>
+  <p class="updated">Luminova · Psicología · Última actualización: 23 de octubre de 2026</p>
+
+  <p class="lead">Tu información es confidencial. Este aviso explica qué datos personales recabamos, para qué los usamos, con quién podrían compartirse y cómo puedes ejercer tus derechos.</p>
+
+  <nav class="toc" aria-label="Contenido">
+    <p>Contenido</p>
+    <ol>
+      <li><a href="#responsable">Responsable de tus datos</a></li>
+      <li><a href="#datos">Datos personales que recabamos</a></li>
+      <li><a href="#finalidades">Para qué usamos tus datos</a></li>
+      <li><a href="#compartir">Con quién compartimos tus datos</a></li>
+      <li><a href="#conservacion">Cuánto tiempo guardamos tus datos y cómo los protegemos</a></li>
+      <li><a href="#derechos">Tus derechos y cómo ejercerlos</a></li>
+      <li><a href="#consentimiento">Tu consentimiento</a></li>
+      <li><a href="#cambios">Cambios a este aviso y autoridad</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="responsable">1. Responsable de tus datos</h2>
+  <p>Denali Lopez, psicóloga con cédula profesional 13116402, que ejerce bajo el nombre comercial <strong>Luminova · Psicología</strong>, es responsable del tratamiento de tus datos personales.</p>
+  <ul>
+    <li>Domicilio para oír y recibir notificaciones: la atención es exclusivamente en línea, por lo que las notificaciones se reciben en el correo <a href="mailto:denali@luminova.mx">denali@luminova.mx</a>.</li>
+    <li>Correo de contacto para temas de privacidad: <a href="mailto:denali@luminova.mx">denali@luminova.mx</a></li>
+    <li>WhatsApp: <a href="https://wa.me/524422854109">+52 442 285 4109</a></li>
+  </ul>
+  <p>La persona encargada de atender tus solicitudes sobre privacidad es Denali Lopez, en el correo indicado.</p>
+
+  <h2 id="datos">2. Datos personales que recabamos</h2>
+  <p>Para brindarte atención psicológica recabamos los siguientes datos, directamente de ti, en la entrevista inicial en línea, en consulta y por mensajes:</p>
+  <ul>
+    <li><strong>Identificación y contacto:</strong> nombre, edad, fecha y lugar de nacimiento, estado civil, escolaridad, ocupación, domicilio, teléfono, WhatsApp y correo electrónico.</li>
+    <li><strong>Contacto de emergencia:</strong> nombre, parentesco y teléfono de la persona que nos indiques.</li>
+    <li><strong>Laborales y académicos:</strong> dónde trabajas o estudias, historial escolar y laboral.</li>
+    <li><strong>Familiares y sociales:</strong> datos sobre tu pareja, hijos, padres, hermanos y otras relaciones que decidas compartir.</li>
+    <li><strong>Patrimoniales:</strong> forma de pago y comprobantes de pago de honorarios; por ley requieren tu consentimiento expreso.</li>
+  </ul>
+  <p><strong>Datos personales sensibles.</strong> También tratamos datos que la ley considera sensibles:</p>
+  <ul>
+    <li>Estado de salud física y mental, síntomas, diagnósticos, tratamientos y medicamentos previos o actuales.</li>
+    <li>Notas clínicas de cada sesión, resultados de evaluaciones y documentos que nos entregues (estudios médicos, recetas).</li>
+    <li>Vida afectiva y sexual, si decides responder esa sección opcional.</li>
+    <li>Creencias religiosas o espirituales y valores personales, si decides compartirlos.</li>
+  </ul>
+  <p>Si nos das datos de otras personas (por ejemplo, tu contacto de emergencia), te pedimos informarles que los compartiste con nosotros.</p>
+
+  <h2 id="finalidades">3. Para qué usamos tus datos</h2>
+  <p><strong>Finalidades necesarias</strong> para darte el servicio que solicitas, que requieren tu consentimiento expreso y por escrito, con tu firma, por tratarse de datos sensibles:</p>
+  <ol>
+    <li>Conocer tu situación y valorar el motivo de consulta.</li>
+    <li>Planear, dar y dar seguimiento a tu tratamiento psicológico.</li>
+    <li>Integrar y resguardar tu expediente clínico.</li>
+    <li>Agendar, confirmar y reprogramar citas por teléfono, WhatsApp o correo.</li>
+    <li>Emitir recibos de honorarios y llevar el control administrativo de pagos.</li>
+    <li>Contactar a tu contacto de emergencia si existe un riesgo para tu vida o tu integridad.</li>
+    <li>Cumplir obligaciones legales y requerimientos de autoridades competentes.</li>
+  </ol>
+  <p><strong>Finalidades adicionales</strong>, que no son necesarias para tu atención:</p>
+  <ul>
+    <li>Enviarte información sobre talleres, artículos y otros contenidos de Luminova.</li>
+  </ul>
+  <p>Si no quieres que usemos tus datos para las finalidades adicionales, escríbenos a <a href="mailto:denali@luminova.mx">denali@luminova.mx</a> en cualquier momento. Tu negativa no afectará tu atención.</p>
+  <p>Tus datos clínicos no se usan con fines publicitarios, de investigación ni de supervisión clínica sin pedirte antes un consentimiento por separado.</p>
+
+  <h2 id="compartir">4. Con quién compartimos tus datos</h2>
+  <p>No vendemos tus datos ni los compartimos con terceros para sus propios fines. Por regla, tu expediente solo se entrega a terceros si tú lo solicitas por escrito.</p>
+  <p>Sin necesidad de tu consentimiento, la ley permite compartir datos únicamente cuando lo exige una ley o una autoridad competente, cuando es necesario para tu atención o diagnóstico médico, o ante una emergencia que ponga en riesgo tu vida o tu salud.</p>
+  <p><strong>Contacto de emergencia.</strong> Si existe un riesgo grave para tu vida o tu integridad, podremos comunicarnos con la persona que nos indicaste como contacto de emergencia y compartirle lo indispensable para protegerte. Al firmar este aviso aceptas o rechazas esta posibilidad (ver <a href="#consentimiento">Tu consentimiento</a>).</p>
+  <p>Para operar usamos estos servicios, que procesan datos por nuestra cuenta y no los usan para sí mismos:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Servicio</th><th>Para qué</th><th>Qué datos pasan por él</th></tr></thead>
+      <tbody>
+        <tr><td>WhatsApp</td><td>Citas, recordatorios y recepción de la entrevista</td><td>Nombre, teléfono, mensajes y el PDF de la entrevista</td></tr>
+        <tr><td>Google Workspace (Gmail)</td><td>Comunicación y recepción de la entrevista</td><td>Nombre, correo, mensajes y archivos</td></tr>
+        <tr><td>Calendly y Cal.com</td><td>Agenda de citas</td><td>Nombre, contacto, fecha y hora de la cita</td></tr>
+        <tr><td>Transferencia bancaria, Mercado Pago y PayPal</td><td>Cobro de honorarios</td><td>Nombre, monto y datos de pago</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Entrevista en línea.</strong> El formulario de entrevista inicial no envía tus respuestas a ningún servidor: se generan en tu dispositivo como un PDF que tú decides enviarnos. Mientras lo llenas, las respuestas se guardan solo en tu navegador y puedes borrarlas al terminar.</p>
+
+  <h2 id="conservacion">5. Cuánto tiempo guardamos tus datos y cómo los protegemos</h2>
+  <p>Conservamos tu expediente clínico al menos 5 años desde la última atención, como indica la NOM-004-SSA3-2012 para expedientes clínicos. La norma incluye expresamente los expedientes de atención psicológica. Después de ese plazo y de un periodo de bloqueo, lo eliminamos de forma segura.</p>
+  <p>Para proteger tus datos aplicamos estas medidas:</p>
+  <ul>
+    <li>El expediente se guarda en una aplicación protegida con Touch ID o contraseña, que se bloquea sola al dejar de usarla.</li>
+    <li>Los respaldos se cifran con contraseña (AES-256).</li>
+    <li>El acceso a tu información está limitado a tu psicóloga tratante.</li>
+  </ul>
+
+  <h2 id="derechos">6. Tus derechos y cómo ejercerlos</h2>
+  <p>Tienes derecho a <strong>acceder</strong> a tus datos, <strong>rectificarlos</strong> si son inexactos, <strong>cancelarlos</strong> cuando ya no sean necesarios y <strong>oponerte</strong> a su uso para ciertos fines (derechos ARCO). También puedes <strong>revocar tu consentimiento</strong> y <strong>limitar</strong> el uso de tus datos para las finalidades adicionales.</p>
+  <p>Para hacerlo, escribe a <a href="mailto:denali@luminova.mx">denali@luminova.mx</a> con:</p>
+  <ol>
+    <li>Tu nombre y un medio para responderte.</li>
+    <li>Una identificación oficial, o la de tu representante legal con el documento que lo acredite.</li>
+    <li>Qué derecho quieres ejercer y sobre qué datos.</li>
+  </ol>
+  <p>Te responderemos en un máximo de 20 días hábiles desde que recibamos tu solicitud. Si procede, la haremos efectiva dentro de los 15 días hábiles siguientes. Ambos plazos pueden ampliarse una sola vez por un periodo igual si el caso lo justifica. Ejercer estos derechos es gratuito; solo podrían cobrarse costos de envío o reproducción.</p>
+  <p>La ley permite no cancelar datos que deben conservarse por disposición legal o que se usan para diagnóstico y atención de salud por un profesional sujeto a secreto, como tu expediente clínico durante el plazo de la sección 5. Cuando sí procede, los datos pasan por un periodo de bloqueo antes de eliminarse y te avisamos. Revocar tu consentimiento puede impedir que sigamos dándote atención, y no tiene efectos sobre lo que ya se hizo.</p>
+
+  <h2 id="consentimiento">7. Tu consentimiento</h2>
+  <p>La ley exige que el consentimiento para datos sensibles se otorgue por escrito, con firma autógrafa, firma electrónica u otro mecanismo de autenticación. Por eso te pediremos firmar esta sección en tu primera sesión.</p>
+  <p>Marca tu decisión en cada punto:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Autorizo</th><th>Sí</th><th>No</th></tr></thead>
+      <tbody>
+        <tr><td>El tratamiento de mis datos personales sensibles (salud física y mental, vida afectiva y sexual, creencias) para las finalidades necesarias de la sección 3</td><td class="box">☐</td><td class="box">☐</td></tr>
+        <tr><td>El tratamiento de mis datos patrimoniales para el cobro y los recibos de honorarios</td><td class="box">☐</td><td class="box">☐</td></tr>
+        <tr><td>Que se contacte a mi contacto de emergencia si existe un riesgo grave para mi vida o integridad</td><td class="box">☐</td><td class="box">☐</td></tr>
+        <tr><td>El uso de mis datos para las finalidades adicionales de la sección 3</td><td class="box">☐</td><td class="box">☐</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="sign" aria-label="Espacio para firma">
+    <div>Nombre</div><div>Firma</div><div>Fecha</div>
+  </div>
+  <p>Puedes revocar este consentimiento en cualquier momento escribiendo a <a href="mailto:denali@luminova.mx">denali@luminova.mx</a>, como se explica en la sección 6. La revocación no tiene efectos retroactivos.</p>
+
+  <h2 id="cambios">8. Cambios a este aviso y autoridad</h2>
+  <p>Si cambiamos este aviso, publicaremos la nueva versión en esta misma página y te avisaremos por WhatsApp o correo antes de aplicar cambios importantes.</p>
+  <p>Si consideras que tu derecho a la protección de datos fue vulnerado, puedes acudir a la Secretaría Anticorrupción y Buen Gobierno, autoridad en la materia desde 2025.</p>
+</article>
+<p class="footer">Luminova · Psicología</p>
+</main>
+</body>
+</html>
