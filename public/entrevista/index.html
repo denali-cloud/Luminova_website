@@ -687,6 +687,15 @@ $("#backBtn").addEventListener("click", () => go(step - 1));
 function buildPDF() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF({ unit: "pt", format: "letter" });
+
+  // Respuestas en formato de datos para que la app Luminova Clínica
+  // pueda importarlas. Van dentro de las propiedades del PDF.
+  doc.setProperties({
+    title: "Entrevista inicial - " + String(data.nombre || "").trim(),
+    subject: interviewPayload(),
+    author: "Luminova",
+    creator: "Luminova - Entrevista en línea",
+  });
   const W = doc.internal.pageSize.getWidth();
   const H = doc.internal.pageSize.getHeight();
   const M = 48;
@@ -801,6 +810,22 @@ function buildPDF() {
     doc.text(`Página ${p} de ${n}`, W - M, H - 28, { align: "right" });
   }
   return doc;
+}
+
+const PAYLOAD_PREFIX = "LUMINOVA-ENTREVISTA-V1:";
+function interviewPayload() {
+  const json = JSON.stringify({
+    app: "luminova-entrevista",
+    version: 1,
+    enviada: new Date().toISOString(),
+    respuestas: data,
+  });
+  const bytes = new TextEncoder().encode(json);
+  let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  }
+  return PAYLOAD_PREFIX + btoa(bin);
 }
 
 function fileName() {
